@@ -1,0 +1,12 @@
+{
+  "testPathIgnorePatterns": ["/node_modules/"],
+  "testEnvironment": "jest-environment-jsdom",
+  "setupFilesAfterEnv": ["<rootDir>/src/tests/setupTests.ts"],
+  "moduleNameMapper": {    
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy",
+    "^@/(.*)": "<rootDir>/src/$1"
+  },
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest"
+  }
+}
